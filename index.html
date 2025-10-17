@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./homePage.css">
     <link rel="stylesheet" href="./main_framework.css">
 </head>
 <body>
+    <script src="./js/app.js"></script>
     <!-- top information data section -->
     <div class="detail_bar_container">
         <div class="te_tex_container dtc">
@@ -45,6 +47,35 @@
                 <img src="./asset/icon/arrow-down-2.png" alt="drop-down-icon" class="drop-down-icon">
             </div>
         </div>
+    </div>
+
+    <!-- Image slider container -->
+    <div class="image_shc_container">
+        <div class="slide active">
+            <img src="./asset/school-image1.jpg" alt="school-image1" class="slide-image">
+        </div>
+        <div class="slide">
+            <img src="./asset/school-image2.jpg" alt="school-image2" class="slide-image">
+        </div>
+        <div class="slide">
+            <img src="./asset/school-image3.jpg" alt="school-image3" class="slide-image">
+        </div>
+        <div class="slide">
+            <img src="./asset/school-image4.jpg" alt="school-image4" class="slide-image">
+        </div>
+        <div class="slide">
+            <img src="./asset/school-image5.jpg" alt="school-image5" class="slide-image">
+        </div>
+
+        <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
+        <button class="next-btn" onclick="changeSlide(1)">❯</button>
+    </div>
+    <div class="dots-container">
+        <span class="dot active" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+        <span class="dot" onclick="setSlide(4)"></span>
     </div>
 </body>
 </html>

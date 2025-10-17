@@ -5,8 +5,6 @@
 /* kanit font imported */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -17,22 +15,38 @@
 /* nav bar section */
 .detail_bar_container {
     width: 100%;
-    height: 30px;
+    min-height: 30px;
     background-color: #333;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: "Prompt", sans-serif;
     background-color: #3E80DC;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.dtc { display: flex; align-items: center; color: white; }
-.dt-icon { width: 20px; height: 20px; margin: 0 15px; filter: invert(); }
-.dt-text { font-size: 0.9rem; }
+.dtc { 
+    display: flex; 
+    align-items: center; 
+    color: white;
+    flex-shrink: 0;
+}
+.dt-icon { 
+    width: 20px; 
+    height: 20px; 
+    margin: 0 15px; 
+    filter: invert();
+    flex-shrink: 0;
+}
+.dt-text { 
+    font-size: 0.9rem;
+}
 
 /* nav section */
 .nav_bar_container {
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -40,19 +54,43 @@
     padding: 0 8rem;
     font-family: "Prompt", sans-serif;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.logo_container { display: flex; align-items: center; }
-.logo-image { width: 55px; height: 55px; }
-.logo_text1 { font-size: 1.4rem; font-weight: 500; font-family: "Kanit", sans-serif;}
-.logo_text2 { font-size: 0.89rem; font-weight: 300; margin-top: -0.6rem; }
+.logo_container { 
+    display: flex; 
+    align-items: center;
+    flex-shrink: 0;
+}
+.logo-image { 
+    width: 55px; 
+    height: 55px;
+    flex-shrink: 0;
+}
+.logo_text1 { 
+    font-size: 1.4rem; 
+    font-weight: 500; 
+    font-family: "Kanit", sans-serif;
+}
+.logo_text2 { 
+    font-size: 0.89rem; 
+    font-weight: 300; 
+    margin-top: -0.6rem; 
+}
 .nav_button_container {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
-.nav_button { align-items: center; display: flex; }
+.nav_button { 
+    align-items: center; 
+    display: flex;
+    flex-shrink: 0;
+}
 .drop-down-icon {
     margin-top: 0.2rem;
     width: 25px;
     height: 25px;
     margin-left: 5px;
+    flex-shrink: 0;
 }

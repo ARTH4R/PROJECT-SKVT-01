@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="./homePage.css">
     <link rel="stylesheet" href="./main_framework.css">
 </head>
@@ -27,17 +27,17 @@
 
     <!-- navigation bar section -->
     <div class="nav_bar_container">
-        <div class="logo_container">
+        <a href="./index.html" class="logo_container">
             <img src="./asset/school-logo.png" alt="school-logo" class="logo-image">
             <div class="logo_text_container">
                 <div class="logo_text1">โรงเรียนสมคิดวิทยา</div>
                 <div class="logo_text2">SOMKIDVITTAYA SCHOOL</div>
             </div>
-        </div>
+        </a>
         <div class="nav_button_container">
-            <div class="nav_button">
+            <a href="./index.html" class="nav_button">
                 <div class="nav-b-text">หน้าแรก</div>
-            </div>
+            </a>
             <div class="nav_button">
                 <div class="nav-b-text">ข้อมูลบุคลากร</div>
                 <img src="./asset/icon/arrow-down-2.png" alt="drop-down-icon" class="drop-down-icon">
@@ -51,25 +51,49 @@
 
     <!-- Image slider container -->
     <div class="image_shc_container">
+        <!-- img slide control container -->
+        <div class="img_slide_control_ui">
+            <div class="control_container">
+                <img src="./asset/icon/img-silde-control-icon/pause.png" alt="pause-icon" class="cc-icon stop-icon">
+                <img src="./asset/icon/img-silde-control-icon/play-button-arrowhead.png" alt="play-icon" class="cc-icon play-icon hidden">
+                <img src="./asset/icon/img-silde-control-icon/slowdown-icon.png" alt="slowdown-icon" class="cc-icon slowdown-icon">
+                <img src="./asset/icon/img-silde-control-icon/speedup-icon.png" alt="speedup-icon" class="cc-icon speedup-icon">
+                <img src="./asset/icon/img-silde-control-icon/reset.png" alt="reset-icon" class="cc-icon reset-icon">
+            </div>
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+            <div class="speed_display_container">
+                <div class="speed-text">ความเร็ว : <span id="speedValue">5</span> วิ</div>
+
+            </div>
+        </div>
+
+        <div class="scroll-down-button">
+            <img src="./asset/icon/down-arrow-3.png" alt="scroll-down-icon" class="scroll-down-icon">
+        </div>
+
         <div class="slide active">
-            <img src="./asset/school-image1.jpg" alt="school-image1" class="slide-image">
+            <img src="#" alt="school-image1" class="slide-image">
         </div>
         <div class="slide">
-            <img src="./asset/school-image2.jpg" alt="school-image2" class="slide-image">
+            <img src="#" alt="school-image2" class="slide-image">
         </div>
         <div class="slide">
-            <img src="./asset/school-image3.jpg" alt="school-image3" class="slide-image">
+            <img src="#" alt="school-image3" class="slide-image">
         </div>
         <div class="slide">
-            <img src="./asset/school-image4.jpg" alt="school-image4" class="slide-image">
+            <img src="#" alt="school-image4" class="slide-image">
         </div>
         <div class="slide">
-            <img src="./asset/school-image5.jpg" alt="school-image5" class="slide-image">
+            <img src="#" alt="school-image5" class="slide-image">
         </div>
+
 
         <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
         <button class="next-btn" onclick="changeSlide(1)">❯</button>
     </div>
+    
     <div class="dots-container">
         <span class="dot active" onclick="setSlide(0)"></span>
         <span class="dot" onclick="setSlide(1)"></span>

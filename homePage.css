@@ -1,26 +1,76 @@
 /* image showcase section  */
 .image_shc_container {
-    width: 100%;
-    height: 500px;
+    width: 100%; height: 500px;
     overflow: hidden;
     position: relative;
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(143, 143, 143);
 }
 .slide.active { display: block; }
 .slide {
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     display: none;
     position: absolute;
 }
 .slide img {
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 500px;
     object-fit: cover;
 }
+/* img slide control section */
+.stop-icon { display: block; }
+.play-icon { display: none; }
+.img_slide_control_ui {
+    position: absolute;
+    right: 91%;
+    top: 84%;
+    width: 8rem; height: auto;
+    background-color: rgba(255, 255, 255, 0.374);
+    z-index: 9999999;
+}
+.control_container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    align-items: center;
+    display: flex; justify-content: space-evenly;
+}
+.cc-icon { width: 20px; height: 20px; cursor: pointer; z-index: 9999999999999; }
+.cc-icon:hover { filter: invert(100%); }
+.speed_display_container { background-color: white; }
+.speed-text { margin-left: 0.8rem; font-size: 0.8rem; font-family: "Prompt", sans-serif; }
+/* Progress Bar */
+.progress-bar-container {
+    width: 90%;
+    height: 6px;
+    background-color: #e0e0e0;
+    margin: 0.3rem auto 0.4rem auto;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #3E80DC;
+    transition: width 0.05s linear;
+}
+/* scrolldown button */
+.scroll-down-button { 
+    width: 50px; height: 50px; 
+    position: absolute;
+    top: 86%;
+    left: 95%;
+    border-radius: 50%; 
+    align-items: center;
+    display: flex; justify-content: center; 
+    background-color: #3E80DC; 
+    cursor: pointer;
+    z-index: 1000;
+}
+.scroll-down-button:hover { border: 2px solid white ; }
+.scroll-down-icon { margin-top: 5px; width: 35px; height: 35px; filter: invert(100); }
+/* dot section this work by javascript by chaning class witn dom*/
 .dots-container {
     position: absolute;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -30,29 +80,28 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .dot {
+    width: 10px; height: 10px;
     display: inline-block;
-    width: 10px;
-    height: 10px;
     border-radius: 50%;
     background: #ccc;
     margin: 0 5px;
     cursor: pointer;
     transition: all 0.3s;
 }
-.dot.active {
-background: #E30000;
-width: 30px;
-border-radius: 5px;
+.dot.active {   
+    background: #E30000;
+    width: 30px;
+    border-radius: 5px;
 }
 .dot:hover {
-background: #764ba2;
+    background: #764ba2;
 }
+/* change image button */
 .prev-btn, .next-btn {
     position: absolute;
     top: 40%;
     font-size: 1.2rem;
-    width: 20px;
-    height: 70px;
+    width: 20px; height: 70px;
     background-color: white;
     cursor: pointer;
     border: none;
@@ -65,5 +114,5 @@ background: #764ba2;
     right: 10px;
 }
 .prev-btn:hover, .next-btn:hover {
-    background-color: #f0f0f0;
+    background-color: #006aff;
 }

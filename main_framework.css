@@ -11,6 +11,9 @@
     box-sizing: border-box;
     text-decoration: none;  
 }
+a {
+    color: black;
+}
 
 /* nav bar section */
 .detail_bar_container {
@@ -86,7 +89,11 @@
     align-items: center; 
     display: flex;
     flex-shrink: 0;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.4rem;
 }
+.nav_button:hover { color: #004CB6; background-color: #004cb620; }
 .drop-down-icon {
     margin-top: 0.2rem;
     width: 25px;

@@ -13,12 +13,14 @@
     box-sizing: border-box;
     text-decoration: none;  
 }
+
 a {
     color: black;
 }
-body {
-    overflow: hidden;
-}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
 
 /* nav bar section */
 .detail_bar_container {
@@ -123,7 +125,7 @@ body {
     background-color: #ffffff;
     padding: 0 8rem;
     font-family: "Prompt", sans-serif;
-    border-top: 1px solid #1e1e1e;
+    border-top: 1px solid #7f7f7f;
     display: flex;
     align-items: center;
     height: 300px;

@@ -29,19 +29,22 @@
 }
 .subheading_link {
     color: #7f7f7f;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .subheading_link:hover {
     color: #636363;
-    transition: 0.5s;
-    
+    transition: 0.4s;
 }
 
 .active_link {
     color: #3E80DC;
     text-decoration: underline;
     text-underline-offset: 10px;
+}
+
+.active_link:hover {
+    color: #3369b5;
 }
 
 /* space information section */

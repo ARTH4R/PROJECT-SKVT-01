@@ -1,4 +1,4 @@
-philosophy_sub_text {
+p, philosophy_sub_text {
     font-size: 1.1rem;
 }
 
@@ -7,11 +7,10 @@ philosophy_sub_text {
     text-align: center;
 }
 
-.information_text {
-    
-}
-
 .information_section {
     margin: 0 2.5rem;
 }
 
+.bold {
+    font-weight: 600;
+}

@@ -43,11 +43,11 @@ a {
     flex-shrink: 0;
 }
 .dt-icon { 
-    width: 20px; 
-    height: 20px; 
-    margin: 0 15px; 
-    filter: invert();
+    width: 15px;
+    height: 15px; 
+    margin: 0 15px;
     flex-shrink: 0;
+    filter: invert();
 }
 .dt-text { 
     font-size: 0.9rem;
@@ -107,6 +107,10 @@ a {
     border-radius: 0.4rem;
 }
 
+.nav-b-text {
+    font-size: 1.1rem;
+}
+
 .nav-b-text, .drop-down-icon {
     cursor: pointer;
 }
@@ -149,11 +153,11 @@ a {
 
 .contact_text {
     font-weight: 300;
-    font-size: 1.30rem;
+    font-size: 1.2rem;
 }
 
 .contact_school_name_text {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.60rem;
 }
 
@@ -165,9 +169,15 @@ a {
 }
 
 .footer_link_text {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: #000000;
+    transition: 0.4s;
+}
+
+.footer_link_text:hover {
+    color: #575757;
+    transition: 0.4s;
 }
 
 .logo_image_footer {

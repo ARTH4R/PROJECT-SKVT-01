@@ -1,0 +1,16 @@
+.colors_image_information {
+    width: 300px;
+    margin-bottom: 3rem;
+}
+
+.highlight_blue {
+    color: #3E80DC;
+}
+
+.highlight_red {
+    color: #E30000;
+}
+
+.bold {
+    font-weight: 500;
+}

@@ -9,7 +9,7 @@
     <link rel="icon" href="asset/logo-school-favicon.ico" type="asset/x-icon">
 </head>
 <body>
-    <script src="./js/app.js"></script>
+
     <!-- top information data section -->
     <div class="detail_bar_container">
         <div class="te_tex_container dtc">
@@ -52,6 +52,8 @@
 
     <!-- Image slider container -->
     <div class="image_shc_container">
+        <!-- toggle img slide control button -->
+        <img src="./asset/icon/img-silde-control-icon/settings.png" alt="" class="setting-icon">
         <!-- img slide control container -->
         <div class="img_slide_control_ui">
             <div class="control_container">
@@ -61,12 +63,11 @@
                 <img src="./asset/icon/img-silde-control-icon/speedup-icon.png" alt="speedup-icon" class="cc-icon speedup-icon">
                 <img src="./asset/icon/img-silde-control-icon/reset.png" alt="reset-icon" class="cc-icon reset-icon">
             </div>
-                <div class="progress-bar-container">
-                    <div id="progressBar" class="progress-bar"></div>
-                </div>
+            <div class="progress-bar-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
             <div class="speed_display_container">
                 <div class="speed-text">ความเร็ว : <span id="speedValue">5</span> วิ</div>
-
             </div>
         </div>
 
@@ -75,19 +76,19 @@
         </div>
 
         <div class="slide active">
-            <img src="#" alt="school-image1" class="slide-image">
+            <img src="./asset/image/default-slide-image/school-image.jpg" alt="school-image1" class="slide-image">
         </div>
         <div class="slide">
-            <img src="#" alt="school-image2" class="slide-image">
+            <img src="./asset/image/default-slide-image/2025-04-10.webp"  alt="school-image2" class="slide-image">
         </div>
         <div class="slide">
-            <img src="#" alt="school-image3" class="slide-image">
+            <img src="./asset/image/default-slide-image/2025-04-10 (2).jpg" alt="school-image3" class="slide-image">
         </div>
         <div class="slide">
-            <img src="#" alt="school-image4" class="slide-image">
+            <img src="./asset/image/default-slide-image/488599362_1387624732551030_4219174548716427697_n.jpg" alt="school-image4" class="slide-image">
         </div>
         <div class="slide">
-            <img src="#" alt="school-image5" class="slide-image">
+            <img src="./asset/image/default-slide-image/2025-04-10 (1).jpg" alt="school-image5" class="slide-image">
         </div>
 
 
@@ -102,5 +103,80 @@
         <span class="dot" onclick="setSlide(3)"></span>
         <span class="dot" onclick="setSlide(4)"></span>
     </div>
+
+    <!-- activity section -->
+    <div class="activity_main_container">
+    <div class="act_header_container">
+        <div class="act-header-text">กิจกรรมโรงเรียน</div>
+    </div>
+
+    <!-- act main content section -->
+    <div class="act_main_content_container">
+        <!-- left side main activity -->
+        <div class="ac_left_container">
+            <div class="ac_background_container">
+                <img src="./asset/image/activity-image/กิจกรรมตลาดนัดแบกะดิน/555623854_1531449871501848_66357573830957023_n.jpg" onerror="this.alt='Image missing 816x400';  this.style.width='100%'; this.style.height='100%';"  alt="activity-background" class="ac-main-bg">
+                <div class="ip_container">
+                <div class="ip-header">โรงเรียนสมคิดวิทยาจัดกิจกรรมตลาดนัดแบกะดิน</div>
+                <div class="ip_sub_container">
+                    <div class="ip-date">
+                        <img src="./asset/icon/calender-icon.png" alt="calender-icon" class="calender-icon invert-color">
+                        <div class="ip-date-text">26 กันยายน 2568</div>
+                    </div>
+                    <div class="ip-more-button">Read more</div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right item section -->
+        <div class="ac_right_container">
+        <div class="right_item">
+            <div class="right_item_img_wrapper">
+                <img src="./asset/image/activity-image/โรงเรียนสมคิดวิทยาจัดกิจกรรม ปาร์ตี้ปิดกล่องช็อก/560772681_1542652820381553_7302523444271985437_n.jpg" onerror="this.style.backgroundColor='gray'; this.alt='Image missing 326.4x128';" alt="activities_image" class="right_item_img">
+            </div>
+            <div class="right_item_text">
+                <div class="right_item_title">โรงเรียนสมคิดวิทยาจัดกิจกรรมปาร์ตี้ปิดกล่องช็อก ภาคเรียนที่ 1</div>
+                <div class="ip-date">
+                    <img src="./asset/icon/calender-icon.png" alt="calender-icon" class="calender-icon">
+                    <div class="right_item_date">9 ตุลาคม 2568</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_item">
+            <div class="right_item_img_wrapper">
+                <img src="./asset/image/activity-image/โครงการ “เด็กไทยสายตาดี” โรงเรียนสมคิดวิทยา/556020497_1535026667810835_2011419092756778770_n.jpg" onerror="this.style.backgroundColor='gray'; this.alt='Image missing 326.4x128';" alt="activities_image" class="right_item_img">
+            </div>
+            <div class="right_item_text">
+                <div class="right_item_title">โครงการ “เด็กไทยสายตาดี” โรงเรียนสมคิดวิทยา</div>
+                    <div class="ip-date">
+                        <img src="./asset/icon/calender-icon.png" alt="calender-icon" class="calender-icon">
+                        <div class="right_item_date">30 กันยายน 2568</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_item">
+            <div class="right_item_img_wrapper">
+                <img src="./asset/image/activity-image/“เรียนดี มีคุณธรรม” และการแลกเปลี่ยนเรียนรู้รับทราบคุณค่า/545822017_1517410252905810_814233836295231302_n.jpg" onerror="this.style.backgroundColor='gray'; this.alt='Image missing 326.4x128';" alt="activities_image" class="right_item_img">
+            </div>
+            <div class="right_item_text">
+                <div class="right_item_title">“เรียนดี มีคุณธรรม” และการแลกเปลี่ยนเรียนรู้รับทราบคุณค่า</div>
+                <div class="ip-date">
+                    <img src="./asset/icon/calender-icon.png" alt="calender-icon" class="calender-icon">
+                    <div class="right_item_date">10 กันยายน 2568</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="activity_button_container">
+        <button class="activity_btn">ดูกิจกรรมโรงเรียนทั้งหมด</button>
+    </div>
+    </div>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>

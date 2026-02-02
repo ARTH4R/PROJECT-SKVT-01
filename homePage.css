@@ -34,7 +34,7 @@
     right: 97.5%;
     top: 92.5%;
     background-color: rgba(255, 255, 255, 0.374);
-    z-index: 10000000000;
+    z-index: 10;
     cursor: pointer;
 }
 .stop-icon { display: block; }
@@ -46,7 +46,7 @@
     top: 81%;
     width: auto; height: auto;
     background-color: rgba(255, 255, 255, 0.374);
-    z-index: 9999999;
+    z-index: 10;
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
     transform: scale(0.9);
@@ -67,7 +67,7 @@
     align-items: center;
     display: flex; justify-content: space-evenly;
 }
-.cc-icon { width: 20px; height: 20px; cursor: pointer; z-index: 9999999999999; }
+.cc-icon { width: 20px; height: 20px; cursor: pointer; z-index: 10; }
 .cc-icon:hover { filter: invert(100%); }
 .speed_display_container { background-color: white; }
 .speed-text { padding: 0.4rem; font-size: 0.8rem; font-family: "Prompt", sans-serif; }
@@ -97,7 +97,7 @@
     display: flex; justify-content: center; 
     background-color: #3E80DC; 
     cursor: pointer;
-    z-index: 1000;
+    z-index: 10;
 }
 .scroll-down-button:hover { border: 2px solid white ; }
 .scroll-down-icon { margin-top: 5px; width: 35px; height: 35px; filter: invert(100); }

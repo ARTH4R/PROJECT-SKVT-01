@@ -1,0 +1,60 @@
+/* font style section */
+.bold-500 {
+    font-weight: 500;
+}
+.bold-600 {
+    font-weight: 600;
+}
+
+/* aboutSchool */
+.school_image_information {
+    width: 500px;
+    margin-bottom: 3rem;
+}
+
+/* about School Emblem section */
+.logo_image_information {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 3rem;
+}
+
+/* about school color section */
+.colors_image_information {
+    width: 300px;
+    margin-bottom: 3rem;
+}
+.highlight_blue {
+    color: #3E80DC;
+}
+.highlight_red {
+    color: #E30000;
+}
+
+
+/* about school tree section */
+.school_image_tree {
+    width: 500px;
+    margin-bottom: 3rem;
+}
+
+/* about school slogan section */
+.information_text {
+    text-align: center;
+}
+
+/* about school philosophy section */
+p, philosophy_sub_text {
+    font-size: 1.1rem;
+}
+.philosophy_text {
+    font-size: 1.3rem;
+    text-align: center;
+}
+.philosophy_information_section {
+    font-family: "Prompt", sans-serif;
+    margin: 0 2.5rem;
+}
+.bold {
+    font-weight: 600;
+}

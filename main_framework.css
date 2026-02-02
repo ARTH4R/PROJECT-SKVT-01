@@ -18,6 +18,25 @@ a {
     color: black;
 }
 
+/* Js functional section */
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out; /* fade animation */
+}
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(10px); /* small upward motion */
+    }
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
 /* body::-webkit-scrollbar {
     display: none;
 } */
@@ -70,20 +89,19 @@ a {
 .logo_container { 
     display: flex; 
     align-items: center;
-    flex-shrink: 0;
+    height: auto;
 }
+.logo_container:hover { color: #3369b5; }
 .logo-image { 
     width: 55px; 
     height: 55px;
     flex-shrink: 0;
 }
-
 .logo_text_container {
     margin-bottom: 0.5rem;
 }
-
 .logo_text1 { 
-    font-size: 1.6rem; 
+    font-size: 1.7rem; 
     font-weight: 500; 
     font-family: "Kanit", sans-serif;
 }
@@ -105,16 +123,39 @@ a {
     cursor: pointer;
     padding: 0.2rem 0.4rem;
     border-radius: 0.4rem;
+    transition:ease-in-out  0.2s;
 }
-
+.nav_button:hover {
+    background-color: #d8e6f8;
+}   
 .nav-b-text {
     font-size: 1.1rem;
+    padding: 0 0.4rem;
+    border-radius: 0.2rem;
 }
-
+.nav-b-text:hover {
+    color: #3E80DC;
+    transition:ease-in-out  0.2s;
+}
 .nav-b-text, .drop-down-icon {
     cursor: pointer;
 }
 
+/* basic sticky styles; adjust colors/heights to match your CSS */
+#topHeaderWrapper.stuck {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+/* ensure the inner layout keeps its width */
+#topHeaderWrapper {
+    width: 100%;
+    will-change: transform;
+}
 .drop-down-icon {
     margin-top: 0.2rem;
     width: 25px;
@@ -122,9 +163,67 @@ a {
     margin-left: 5px;
     flex-shrink: 0;
 }
-
+/* nav dropdown section */
+/* ensure dropdown hidden by default but can be shown by JS */
+.nav-dropdown-container { display: none; }
+.nav-dropdown-container.show { display: block; }
+/* optional: make hover target obvious */
+.nav_button { position: relative; }
+.nav-dropdown-container {
+    width: 100%;
+    height: auto;
+    font-family: "Prompt", sans-serif;
+    padding: 0 8rem;
+    padding-bottom: 2rem;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+.ndd-header-text {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+}
+.ndd-header-text:hover {
+    color: #E30000;
+    transition:ease-in-out  0.2s;
+}
+.ndd_b-content_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 6rem;
+}
+.ndd-item {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+    align-items: center;
+    color: #69696969;
+    font-weight: 500;
+}
+.ndd-item-icon {
+    width: 29px;
+    height: 29px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.ndd-item:hover .ndd-bc-item {
+    color: #3E80DC;
+    transition: 0.2s;
+}
+.ndd-item:hover {
+    background-color: #d8e6f8;
+}
+.ndd-item:hover .ndd-item-icon {
+    filter: invert(39%) sepia(83%) saturate(2211%) hue-rotate(203deg) brightness(95%) contrast(101%);
+    transition: 0.2s;
+}
 /* footer section */
-
 .footer_top_section {
     background-color: #ffffff;
     padding: 0 8rem;
@@ -134,62 +233,51 @@ a {
     align-items: center;
     height: 300px;
 }
-
 .box_1 {
     display: flex;
     align-items: center;
     gap: 50px;
 }
-
 .box_2 {
     margin-left: 470px;
 }
-
 .contact_section {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .contact_text {
     font-weight: 300;
     font-size: 1.2rem;
 }
-
 .contact_school_name_text {
     font-weight: 600;
     font-size: 1.60rem;
 }
-
 .footer_link {
     display: flex;
     flex-direction: column;
     margin-bottom: 65px;
     gap: 10px;
 }
-
 .footer_link_text {
     font-size: 1.1rem;
     font-weight: 400;
     color: #000000;
     transition: 0.4s;
 }
-
 .footer_link_text:hover {
     color: #575757;
     transition: 0.4s;
 }
-
 .logo_image_footer {
     width: 150px;
     height: 150px;
 }
-
 .footer_empty_section {
     background-color: #3E80DC;
     height: 80px;
 }
-
 .footer_bottom_section {
     background-color: #1e1e1e;
     display: flex;
@@ -201,3 +289,74 @@ a {
     font-size: 1.1rem;
     color: #ffffff;
 }
+
+/* --- information section --- */
+/* header information section */
+.header_of_things {
+    background-color: #3E80DC;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Prompt", sans-serif;
+    color: #ffffff;
+}
+.header_title_text {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.header_description_text {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.subheading_of_things {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    font-family: "Prompt", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 25px 0;
+}
+.subheading_link {
+    cursor: pointer;
+    color: #7f7f7f;
+    transition: 0.4s;
+}
+.subheading_link:hover {
+    color: #636363;
+    transition: 0.4s;
+}
+.active_link {
+    color: #3E80DC;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.active_link:hover {
+    color: #3369b5;
+}
+
+/* space information section */
+.space_box {
+    margin: 4.5rem 12.5rem;
+}
+.information_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Prompt", sans-serif;
+}
+.subheading_title_text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.information_text {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | School History</title>
+    <link rel="stylesheet" href="./main_framework.css">
+    <link rel="stylesheet" href="./aboutSchool.css">
+    <link rel="icon" href="asset/logo-school-favicon.ico" type="asset/x-icon">
+</head>
+<body>
+    <script src="./js/aboutSchool.js"></script>
+    <!-- top information data section -->
+    <div class="detail_bar_container">
+        <div class="te_tex_container dtc">
+            <img src="./asset/icon/telephone-icon-black.png" alt="telephone-icon" class="tel-icon dt-icon">
+            <span class="tel-text dt-text">038 611 251</span>
+        </div>
+        <div class="mail_tex_container dtc">
+            <img src="./asset/icon/mail-icon-black.png" alt="Email-icon" class="mail-icon dt-icon">
+            <div class="mail-text dt-text">mail@somkidvittaya.ac.th</div>
+        </div>
+        <div class="address_text_container dtc">
+            <img src="./asset/icon/location-icon-black.png" alt="address-icon" class="address_icon dt-icon">
+            <div class="address-text dt-text">80/5 ถ.หลังวัดป่าประดู่ ต.ท่าประดู่ อ.เมือง จ.ระยอง</div>
+        </div>
+    </div>
+
+    <!-- navigation bar section -->
+    <div class="nav_bar_container">
+        <div class="logo_container">
+            <img src="./asset/school-logo.png" alt="school-logo" class="logo-image">
+            <div class="logo_text_container">
+                <div class="logo_text1">โรงเรียนสมคิดวิทยา</div>
+                <div class="logo_text2">SOMKIDVITTAYA SCHOOL</div>
+            </div>
+        </div>
+        <div class="nav_button_container">
+            <div class="nav_button">
+                <a href="./index.html" class="nav-b-text">หน้าแรก</a>
+            </div>
+            <div class="nav_button">
+                <a href="./personnelCommittee.html" class="nav-b-text">ข้อมูลบุคลากร</a>
+                <img src="./asset/icon/arrow-down-2.png" alt="drop-down-icon" class="drop-down-icon">
+            </div>
+            <div class="nav_button">
+                <a href="./aboutSchool.html" class="nav-b-text">เกี่ยวกับโรงเรียน</a>
+                <img src="./asset/icon/arrow-down-2.png" alt="drop-down-icon" class="drop-down-icon">
+            </div>
+        </div>
+    </div>
+
+    <!-- school personnel information section -->
+    <div class="header_of_things">
+        <h1 class="header_title_text">เกี่ยวกับโรงเรียน</h1>
+        <p class="header_description_text">ข้อมูลเกี่ยวกับโรงเรียนสมคิดวิทยา</p>
+    </div>
+    <div class="subheading_of_things">
+        <a class="subheading_link active_link" onclick="showSection(0); return false;">ประวัติโรงเรียน</a>
+        <a class="subheading_link" onclick="showSection(1); return false;">ตราประจำโรงเรียน</a>
+        <a class="subheading_link" onclick="showSection(2); return false;">สีประจำโรงเรียน</a>
+        <a class="subheading_link" onclick="showSection(3); return false;">ต้นไม้ประจำโรงเรียน</a>
+        <a class="subheading_link" onclick="showSection(4); return false;">คำขวัญ</a>
+        <a class="subheading_link" onclick="showSection(5); return false;">อัตลักษณ์/เอกลักษณ์</a>
+        <a class="subheading_link" onclick="showSection(6); return false;">ปรัชญา</a>
+    </div>
+
+    <!-- school History section -->
+    <div class="space_box display-block">
+        <!-- information section -->
+        <div class="information_section">
+            <div class="subheading_title_text">ประวัติโรงเรียน</div>
+            <img src="./asset/school-image.jpg" alt="school-image-information" class="school_image_information">
+            <p class="information_text">
+                โรงเรียนสมคิดวิทยา ก่อตั้ง เมื่อวันที่ 1 พฤษภาคม พ.ศ. 2503 โดยมีนายทองอยู่ สุขศิริเป็นผู้ก่อตั้งและดำรงตำแหน่งผู้จัดการมี นางสมคิด สุภาพ <br>
+                ดำรงตำแหน่งผู้รับใบอนุญาต ขณะนั้นโรงเรียนได้เปิดทำการสอนเริ่มเปิดสอนระดับอนุบาลเพียงอย่างเดียว ได้รับอนุญาตให้รับนักเรียนความจุจำนวน 150 คน <br>
+                มีครูทำการสอนทั้งหญิง และชาย จำนวน 10 คน ทั้งนี้อยู่ภายใต้ความควบคุมบริหารของนายทองอยู่ สุขศิริ และมีนายแพน จันทร์ศรี ตำรงตำแหน่งครูใหญ่ <br>
+                เป็นผู้ดำเนินกิจการด้วยดีตลอดมา <br><br>
+                จนกระทั่งในปี พ.ศ. 2508 นายสมหมาย สุขศิริ ดำรงตำแหน่งผู้จัดการ นายอุทัย ภุมรินทร์ดำรงตำแหน่งครูใหญ่ จึงได้อนุญาตขยายเปิดทำการสอน <br>
+                ในระดับชั้นประถมศึกษาและมัธยมศึกษาตอนต้นโดยเริ่มเปิดปีละระดับชั้นเรียน ขออนุญาตขยายการรับนักเรียนเพิ่มอย่างต่อเนื่องตลอดมา
+                โรงเรียนสมคิดวิทยามีพื้นที่ค่อนข้างคับแคบสำหรับจัดการศึกษาระดับประถมศึกษา และมัธยม <br><br>
+                ต่อมาในปี พ.ศ. 2530 คงจัดการศึกษาระดับอนุบาลเพียงอย่างเดียว เพื่อให้เหมาะสมกับพื้นที่อันจำกัด
+                ต่อมาในปี พ.ศ. 2533 นางศศิธร สุขศิริ ดำรงตำแหน่งครูใหญ่ นายสมหมาย สุขศิริ ดำรงตำแหน่งผู้ทำการแทนผู้รับใบอนุญาต และผู้จัดการ จึงได้มีการพัฒนาอาคารสถานที่จัดกิจกรรมเสริมหลักสูตรให้กับผู้เรียน เป็นลำดับอย่างต่อเนื่อง จนกระทั่งในปี พ.ศ. 2537 ผู้ปกครองมีความต้องการให้เปิดสอนในระดับประถมศึกษา ทาง ผู้บริหารจึงได้ขออนุญาต เปิดการเรียนการสอนระดับประถมศึกษาขึ้นพร้อมทั้งได้ ขยายพื้นที่ของโรงเรียนปรับปรุงอาคารสถานที่ พัฒนาการเรียน การสอน อย่างต่อเนื่องตลอดมาจนถึงปี พ.ศ.2565 ท่านผอ. ดร.ศศิธร เสียชีวิตด้วยอาการป่วย จึงมีการแต่งตั้ง นายณัฐวัฒน์ สงเคราะห์ธรรม ขึ้นดำรงตำแหน่งผู้อำนวยการโรงเรียนสมคิดวิทยา
+                เมื่อวันที่ 10 ตุลาคม พ.ศ. 2565 จนถึงปัจจุบัน <br><br>
+                ในปี พ.ศ. 2567 ได้จัดตั้ง บริษัทศิริธรรม จำกัด โดยมีนายณัฐวัฒน์ สงเคราะห์ธรรม เป็นผู้ลงนามแทนผู้รับ
+                ใบอนุญาตและดำรงตำแหน่งผู้จัดการ/ผู้อำนวยการโรงเรียนสมคิดวิทยา จนถึงปัจจุบัน
+            </p>
+        </div>
+    </div>
+
+    <!-- school Emblem section -->
+    <div class="space_box display-none">
+        <!-- information section -->
+        <div class="information_section">
+            <div class="subheading_title_text">ตราประจำโรงเรียน</div>
+            <img src="./asset/school-logo-ver2.webp" alt="logo-image-information" class="logo_image_information">
+            <p class="information_text">
+                นางฟ้าถือดอกบัวและถือหนังสือมีดาวกระจาย ประกอบด้วยความหมายของสัญลักษณ์ ดังนี้ <br>
+                1. นางฟ้า คือ เทพธิตาเปรียบเสมือนครูผู้ให้ความรู้ ด้วยความรัก และเมตตาต่อศิษย์ <br>
+                2. ดอกบัว หมายถึง สัญลักษณ์ของความบริสุทธิ์ ความดีงาม ความศรัทธา เปรียบเหมือนการสร้างเยาวชน ที่มีความดีงามสู่สังคมประเทศชาติตลอดมา <br>
+                3. หนังสือ หมายถึง เครื่องหมายที่ในการใช้เขียนหรือตีพิมพ์เป็นเล่มแทนคำพูดเป็นลายลักษณ์อักษร เปรียบเหมือนแหล่งศูนย์รวมความรู้ต่าง ๆ <br>
+                4. ดาวกระจาย 2 ดวง หมายถึง ความสดใสมีคุณค่าของเด็กในวัยปฐมวัยและประถมศึกษาที่อยู่คู่กับโรงเรียนสมคิดวิทยา
+            </p>
+        </div>
+    </div>
+
+    <!-- school Colors section -->
+    <div class="space_box display-none">
+        <!-- information section -->
+        <div class="information_section">
+            <div class="subheading_title_text">สีประจำโรงเรียน</div>
+            <img src="./asset/school-colors.png" alt="colors-image-information" class="colors_image_information">
+            <p class="information_text">
+                สีประจำโรงเรียน คือ สีฟ้า-แดง<br>
+                <span class="highlight_blue bold-500">สีฟ้า</span> หมายถึง ความนุ่มนวล ความสุขุม ความสงบเย็นและความผ่อนคลาย <br>
+                <span class="highlight_red bold-500">สีแดง</span> หมายถึง พลังและอำนาจที่ส่งผลให้ประสบผลสำเร็จในชีวิต
+            </p>
+        </div>
+    </div>
+
+    <!-- school Tree section -->
+    <div class="space_box display-none">
+        <!-- information section -->
+        <div class="information_section">
+            <div class="subheading_title_text">ต้นไม้ประจำโรงเรียน</div>
+            <img src="./asset/school-tree.jpg" alt="school-image-tree" class="school_image_tree">
+            <p class="information_text">
+                ต้นจามจุรี เป็นต้นไม้ที่มีอายุกว่า 100 ปี ที่แตกกิ่งก้านสาขาให้ร่มเงากับโรงเรียนตลอดมา เปรียบเหมือนความรัก ความเมตตา <br>
+                ความเอาใจใส่ของโรงเรียนที่มีต่อลูกสมคิดวิทยาที่เฝ้าปลูกฝังด้านความคิด และความงอกงามเป็นเยาวชนที่ดีของชาติสืบไป
+            </p>
+        </div>
+    </div>
+
+    <!-- school Slogan section -->
+    <div class="space_box display-none">
+        <!-- information section -->
+        <div class="information_section">
+            <div class="subheading_title_text">คำขวัญ</div>
+            <p class="information_text">
+                <span class="bold-600">คำขวัญปฐมวัย</span>
+                ให้ความรู้ ให้ความรัก ให้ความปลอดภัย
+                <br>
+                <span class="bold--600">คำขวัญประถมศึกษา</span>
+                คุณธรรมนำการศึกษา เพื่อพัฒนาตนเองและสังคม
+            </p>
+        </div>
+    </div>
+
+    <!-- school Identity and Personality section -->
+    <div class="space_box display-none">
+        <!-- information section -->
+        <div class="information_section">
+            <div class="subheading_title_text">อัตลักษณ์/เอกลักษณ์</div>
+            <p class="information_text">
+                <span class="bold-600">อัตลักษณ์</span>
+                โรงเรียนสืบสานอนุรักษ์ศิลปวัฒนธรรมมรดกไทยและโขน
+                <br>
+                <span class="bold-600">คำขวัญประถมศึกษา</span>
+                สืบสานอนุรักษ์ศิลปวัฒนธรรมมรดกไทยและโขน
+            </p>
+        </div>
+    </div>
+
+    <!-- school Philosophy section -->
+    <div class="space_box display-none">
+        <!-- information section -->
+        <div class="philosophy_information_section">
+            <div class="subheading_title_text">ปรัชญา</div>
+            <p class="information_text">
+                <span class="philosophy_text">"การศึกษาดี กิจกรรมเด่น เน้นวินัย ยึดมันคุณธรรม"</span>
+                <br><br>
+            </p>
+            <p class="philosophy_sub_text">
+                <span class="bold">การศึกษาดี</span> หมายถึง นักเรียนมีการเรียนรู้อย่างมีคุณภาพ และเกิดผลสัมฤทธิ์ทางการเรียน ตามหลักสูตรแต่ละระดับ <br>
+                <span class="bold">กิจกรรมเด่น</span> หมายถึง กิจกรรมของนักเรียนเป็นที่ยอมรับของชุมชน และสังคม <br>
+                <span class="bold">เน้นวินัย</span> หมายถึง นักเรียนเป็นผู้อยู่ในระเบียบวินัยกฎเกณฑ์ ของสถานศึกษาและสังคม <br>
+                <span class="bold">ยึดมั่นคุณธรรม</span> หมายถึง มีจิตสำนึกยึดมั่นและปฏิบัติตนเป็นผู้มีคุณธรรม จริยธรรมปรัชญาของโรงเรียนสมคิดวิทยามุ่งจัดการศึกษาบนพื้นฐานของการอบรมเลี้ยงดูเด็กให้เรียนรู้จากประสบการณ์ตรง มุ่งจัดการศึกษาดี กิจกรรมเด่น เน้นวินัย ยึดมั่นคุณธรรม ให้เด็กมีความสามารถในการวิเคราะห์ การแก้ปัญหาได้อย่างเหมาะสมตามวัย ปลูกฝังนิสัยรักการอ่าน ไฝ่เรียน ใฝ่รู้พัฒนาเด็ก ด้วยแนวคิดและนวัตกรรมในการพัฒนาเด็กปฐมวัยให้ร่างกายแข็งแรง เจริญเติบโตมีการพัฒนาตามวัยครบทั้ง 4 ด้าน มีสุขภาพจิตดี มีน้ำใจมีวินัย มีความเป็นไทยเป็นพื้นฐานการเรียนรู้อย่างต่อเนื่องในอนาคตให้มีความเชื่อมั่น กล้าคิด กล้าทำ กล้าแสดงออก มีคุณธรรม จริยธรรม อนุรักษ์ศิลปวัฒนธรรมและสิ่งแวดล้อม
+            </p>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer_container">
+        <div class="footer_top_section">
+            <div class="box_1">
+                <img src="./asset/school-logo.png" alt="school-logo" class="logo_image_footer">
+                <div class="contact_section">
+                    <p class="contact_text contact_school_name_text">โรงเรียนสมคิดวิทยา</p>
+                    <p class="contact_text">80/5 ถนน หลังวัดป่า ตำบล ท่าประดู่ <br>อำเภอเมืองระยอง ระยอง 21000</p>
+                    <p class="contact_text">โทรศัพท์ 038 611 251</p>
+                    <p class="contact_text">Email @somkidvittaya.ac.th</p>
+                </div>
+            </div>
+            <div class="box_2">
+                <div class="footer_link">
+                    <a href="" class="footer_link_text">ติดต่อโรงเรียน</a>
+                    <a href="" class="footer_link_text">แผนที่และการเดินทาง</a>
+                    <a href="" class="footer_link_text">เกี่ยวกับโรงเรียน</a>
+                    <a href="" class="footer_link_text">ข้อมูลบุคลาการ</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_empty_section"></div>
+        <div class="footer_bottom_section">
+            <p class="copyright_text">Copyright © 2025 Somkidvittaya School, All rights reserved.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -226,3 +226,4 @@ document.addEventListener('click', (e) => {
         imgSlideControlUI.classList.remove('show');
     }
 });
+
